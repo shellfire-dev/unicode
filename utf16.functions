@@ -8,8 +8,8 @@ unicode_utf16_encodeCodePoint()
 	if [ $codePoint -lt 65536 ]; then
 		_unicode_writeUnsignedShort${endianess} $codePoint
 	elif [ $codePoint -le 1114111 ]; then
-	    _unicode_writeUnsignedShort${endianess} $((((code_point >> 10) + 55232))
-	    _unicode_writeUnsignedShort${endianess} $((((code_point & 1023) + 56320))
+	    _unicode_writeUnsignedShort${endianess} $(((code_point >> 10) + 55232))
+	    _unicode_writeUnsignedShort${endianess} $(((code_point & 1023) + 56320))
 	else
 		core_exitError $core_commandLine_exitCode_SOFTWARE "Invalid code point"
 	fi
