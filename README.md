@@ -33,7 +33,7 @@ You will also need to add paths - include the module [paths.d].
 This currently exposes no functions.
 
 
-## Namespace `utf8`
+## Namespace `unicode_utf8`
 
 This namespace exposes functions to convert a code point to a UTF-8 sequence.
 
@@ -65,7 +65,7 @@ _program()
 Writes the UTF-8 sequence of bytes for the code point to standard out. Exits with an error for an incorrect value.
 
 ***
-## Namespace `utf16`
+## Namespace `unicode_utf16`
 
 This namespace exposes functions to convert a code point to a UTF-8 sequence.
 
