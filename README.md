@@ -2,6 +2,10 @@
 
 This module provides a simple framework for encoding `unicode` with a [shellfire] application. An example user is the [jsonreader] module, which uses it to convert unicode code points to UTF-8 strings.
 
+## Compatibility
+
+* Tag [`release_2015.0117.1750-1`](https://github.com/shellfire-dev/unicode/releases/tag/release_2015.0117.1750-1) is compatible with [shellfire] release [`release_2015.0117.1750-1`](https://github.com/shellfire-dev/shellfire/releases/tag/release_2015.0117.1750-1).
+
 ## Overview
 
 To encode the ellipsis … code point as UTF-8 (0xE280A6), use the following code:-
